@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Blackjack Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="overlay">
+
+<h1>BLACKJACK</h1>
+
+<div class="table">
+
+  <h2>Dealer</h2>
+  <div id="dealerCards" class="cards"></div>
+
+  <h2>Player</h2>
+  <div id="playerCards" class="cards"></div>
+
+  <h3>Balance: <span id="balance"></span></h3>
+
+  <button onclick="hit()">Hit</button>
+  <button onclick="stand()">Stand</button>
+
+</div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
