@@ -2,42 +2,22 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>Blackjack Casino</title>
+<title>Blackjack Lobby</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
 <div class="overlay">
+  <h1>🃏 LOBBY</h1>
 
-<h1>BLACKJACK</h1>
+  <div class="table">
+    <p>Suche Gegner...</p>
+    <div id="status">Wartet auf Spieler...</div>
 
-<div class="table">
-
-  <div class="section">
-    <h2>Dealer</h2>
-    <div id="dealerCards" class="cards"></div>
-    <div id="dealerScore"></div>
+    <button onclick="findMatch()">Matchmaking starten</button>
   </div>
-
-  <hr>
-
-  <div class="section">
-    <h2>Player</h2>
-    <div id="playerCards" class="cards"></div>
-    <div id="playerScore"></div>
-  </div>
-
-  <h3>Balance: <span id="balance"></span></h3>
-
-  <button onclick="hit()">Hit</button>
-  <button onclick="stand()">Stand</button>
-  <button onclick="resetGame()">Reset</button>
-
 </div>
 
-</div>
-
-<script src="script.js"></script>
+<script src="lobby.js"></script>
 </body>
 </html>
